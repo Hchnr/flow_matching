@@ -4,6 +4,8 @@ from sklearn.datasets import make_moons
 
 # 生成数据（100个样本，添加少量噪声）
 X, y = make_moons(n_samples=100, noise=0.1, random_state=42)
+print(f"{X=}")
+print(f"{y=}")
 
 # 可视化
 plt.figure(figsize=(8, 6))

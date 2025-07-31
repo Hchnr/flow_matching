@@ -3,11 +3,19 @@ import plotext as plt
 from sklearn.datasets import make_moons
 
 # 生成数据
-X, y = make_moons(n_samples=500, noise=0.1, random_state=42)
+X, y = make_moons(n_samples=10, noise=0.1, random_state=42)
+
+print(f"{X=}")
+print(f"{y=}")
 
 # 分离两类数据
 x0, y0 = X[y == 0, 0], X[y == 0, 1]
 x1, y1 = X[y == 1, 0], X[y == 1, 1]
+
+print(f"{x0=}")
+print(f"{y0=}")
+print(f"{x1=}")
+print(f"{y1=}")
 
 # 终端绘图
 plt.clf()  # 清除上一次绘图
